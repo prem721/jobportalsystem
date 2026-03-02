@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS job_portal;
+USE job_portal;
+
+-- JOBS TABLE
+CREATE TABLE IF NOT EXISTS jobs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    company VARCHAR(255),
+    location VARCHAR(255),
+    description TEXT
+);
+
+-- APPLICATIONS TABLE
+CREATE TABLE IF NOT EXISTS applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    job_id INT NOT NULL,
+    user_id INT NOT NULL,
+    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (job_id) REFERENCES jobs(id)
+);

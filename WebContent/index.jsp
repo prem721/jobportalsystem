@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Job Portal System</title>
+    <title>Prem Kumar Java Project</title>
 
     <style>
         body {
@@ -38,7 +38,7 @@
             margin: 10px;
             border-radius: 8px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
             transition: 0.3s ease;
             border: 2px solid white;
@@ -55,10 +55,10 @@
 
 <body>
     <div class="container">
-        <h1>Welcome to Job Portal System</h1>
+        <h1>Java Project Job Portal System</h1>
 
-        <a href="jobs.jsp" class="btn">View Jobs</a>
-        <a href="post-job.jsp" class="btn">Post a Job</a>
+        <a href="jobs.jsp" class="btn">Hey! view Jobs</a>
+        <a href="post-job.jsp" class="btn">thanks! Post a Job</a>
     </div>
 </body>
 </html>
